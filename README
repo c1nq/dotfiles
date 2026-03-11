@@ -1,0 +1,18 @@
+@"
+# c1nq dotfiles
+
+## Inhoud
+- `powershell_profile.ps1` - PowerShell profiel met aliassen, autocomplete en titelbar
+- `c1nq.omp.json` - Oh My Posh thema (rood)
+- `fastfetch.jsonc` - Fastfetch config
+
+## Installeren op nieuw systeem
+1. Oh My Posh installeren
+2. Bestanden kopiëren naar de juiste plekken
+3. Profiel laden met `. $PROFILE`
+"@ | Set-Content "$env:USERPROFILE\dotfiles\README.md"
+
+cd "$env:USERPROFILE\dotfiles"
+git add .
+git commit -m "add README"
+git push
